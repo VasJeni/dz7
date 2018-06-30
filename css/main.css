@@ -1,0 +1,39 @@
+li{
+    list-style-type: none;
+}
+.menu {
+    position: relative;
+}
+.first_level_menu{
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid red;
+    left: 0;
+}
+.second_level_menu{
+    position: absolute;
+    visibility: hidden;
+}
+.first_menu{
+    top: 0;
+}
+.second_menu{
+    top: 40px;
+}
+.third_menu{
+    top: 80px;
+}
+.forth_menu{
+    top: 120px;
+}
+.fives_menu{
+    top: 160px;
+}
+.third_level_menu{
+    position: absolute;
+}
+nav{
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
