@@ -4,15 +4,19 @@ li{
 .menu {
     position: relative;
 }
+/*
 .first_level_menu{
     position: absolute;
     box-sizing: border-box;
     border: 1px solid red;
     left: 0;
 }
-.second_level_menu{
+.second_level_menu,
+.third_level_menu{
     position: absolute;
     visibility: hidden;
+    left: 100%;
+    top: 0;
 }
 .first_menu{
     top: 0;
@@ -36,4 +40,11 @@ nav{
     box-sizing: border-box;
     border: 1px solid black;
 }
-
+.first_level_menu:hover .second_level_menu{
+    visibility: visible;
+    position: relative;
+}
+.second_level_menu:hover .third_level_menu{
+    visibility: visible;
+    position: relative;
+}*/
