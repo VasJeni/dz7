@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Menu</title>
+<!--        <link rel="stylesheet" href="css/reset_css.css">-->
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .menu{
+                position: relative;
+                display: inline-block;
+            }
+            .sub_menu{
+                position:absolute;
+                top: -0;
+                left: 100%
+            }
+            .menu_item,
+            .sub_menu_item,
+            .sub_sub_menu_item{
+                box-sizing: border-box;
+                border: 1px solid #eeeeee;
+            }
+            .sub_sub_menu{
+                top: 0;
+                position: absolute;
+                left: 100%;
+            }
+            li{
+                list-style: none;
+                box-sizing: border-box;
+                padding: 10px 20px;
+            }
+            .sub_menu{
+                visibility: hidden;
+            }
+            .sub_sub_menu{
+                visibility: hidden;
+            }
+            .menu_item:hover .sub_menu{
+                visibility: visible;
+                background-color: #007700;
+            }
+            .sub_menu_item:hover .sub_sub_menu{
+                visibility: visible;
+                background-color: #005200;
+            }
+            ul{
+                box-sizing: border-box;
+            }
+            li{
+                width: 100%;
+                text-align: center;
+            }
+            .menu_item{
+                background-color: #00ff00;
+            }
+            .menu_item:hover,
+            .sub_menu_item:hover,
+            .sub_sub_menu_item:hover{
+                background-color: #fff;
+                position: relative;
+            }
+            .sub_sub_menu_item:hover{
+                position: relative;
+            }
+            .menu_item:hover::after,
+            .sub_menu_item:hover::after{
+                content: ">";
+                position: absolute;
+                right: 0.5em ;
+                top: 0.65em;
+                display: inline-block;
+                vertical-align: center;
+            }
+            /*span{*/
+                /*position: relative;*/
+            /*}*/
+        </style>
+
+    </head>
+    <body>
+
+        <ul class="menu">
+            <li class="menu_item"><span>text1</span>
+                <ul class="sub_menu">
+                    <li class="sub_menu_item"><span>text01</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text111</span></li>
+                            <li class="sub_sub_menu_item"><span>text112</span></li>
+                            <li class="sub_sub_menu_item"><span>text113</span></li>
+                            <li class="sub_sub_menu_item"><span>text114</span></li>
+                            <li class="sub_sub_menu_item"><span>text115</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text02</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text121</span></li>
+                            <li class="sub_sub_menu_item"><span>text122</span></li>
+                            <li class="sub_sub_menu_item"><span>text123</span></li>
+                            <li class="sub_sub_menu_item"><span>text124</span></li>
+                            <li class="sub_sub_menu_item"><span>text125</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text03</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text131</span></li>
+                            <li class="sub_sub_menu_item"><span>text132</span></li>
+                            <li class="sub_sub_menu_item"><span>text133</span></li>
+                            <li class="sub_sub_menu_item"><span>text134</span></li>
+                            <li class="sub_sub_menu_item"><span>text135</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text04</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text141</span></li>
+                            <li class="sub_sub_menu_item"><span>text142</span></li>
+                            <li class="sub_sub_menu_item"><span>text143</span></li>
+                            <li class="sub_sub_menu_item"><span>text144</span></li>
+                            <li class="sub_sub_menu_item"><span>text145</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text05</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text151</span></li>
+                            <li class="sub_sub_menu_item"><span>text152</span></li>
+                            <li class="sub_sub_menu_item"><span>text153</span></li>
+                            <li class="sub_sub_menu_item"><span>text154</span></li>
+                            <li class="sub_sub_menu_item"><span>text155</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu_item"><span>text2</span>
+                <ul class="sub_menu">
+                    <li class="sub_menu_item"><span>text11</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text211</span></li>
+                            <li class="sub_sub_menu_item"><span>text212</span></li>
+                            <li class="sub_sub_menu_item"><span>text213</span></li>
+                            <li class="sub_sub_menu_item"><span>text214</span></li>
+                            <li class="sub_sub_menu_item"><span>text215</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text12</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text221</span></li>
+                            <li class="sub_sub_menu_item"><span>text222</span></li>
+                            <li class="sub_sub_menu_item"><span>text223</span></li>
+                            <li class="sub_sub_menu_item"><span>text224</span></li>
+                            <li class="sub_sub_menu_item"><span>text225</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text13</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text231</span></li>
+                            <li class="sub_sub_menu_item"><span>text232</span></li>
+                            <li class="sub_sub_menu_item"><span>text233</span></li>
+                            <li class="sub_sub_menu_item"><span>text234</span></li>
+                            <li class="sub_sub_menu_item"><span>text235</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text14</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text241</span></li>
+                            <li class="sub_sub_menu_item"><span>text242</span></li>
+                            <li class="sub_sub_menu_item"><span>text243</span></li>
+                            <li class="sub_sub_menu_item"><span>text244</span></li>
+                            <li class="sub_sub_menu_item"><span>text245</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text15</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text251</span></li>
+                            <li class="sub_sub_menu_item"><span>text252</span></li>
+                            <li class="sub_sub_menu_item"><span>text253</span></li>
+                            <li class="sub_sub_menu_item"><span>text254</span></li>
+                            <li class="sub_sub_menu_item"><span>text255</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu_item"><span>text3</span>
+                <ul class="sub_menu">
+                    <li class="sub_menu_item"><span>text31</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text311</span></li>
+                            <li class="sub_sub_menu_item"><span>text312</span></li>
+                            <li class="sub_sub_menu_item"><span>text313</span></li>
+                            <li class="sub_sub_menu_item"><span>text314</span></li>
+                            <li class="sub_sub_menu_item"><span>text315</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text32</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text321</span></li>
+                            <li class="sub_sub_menu_item"><span>text322</span></li>
+                            <li class="sub_sub_menu_item"><span>text323</span></li>
+                            <li class="sub_sub_menu_item"><span>text324</span></li>
+                            <li class="sub_sub_menu_item"><span>text325</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text33</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text331</span></li>
+                            <li class="sub_sub_menu_item"><span>text332</span></li>
+                            <li class="sub_sub_menu_item"><span>text333</span></li>
+                            <li class="sub_sub_menu_item"><span>text334</span></li>
+                            <li class="sub_sub_menu_item"><span>text335</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text34</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text341</span></li>
+                            <li class="sub_sub_menu_item"><span>text342</span></li>
+                            <li class="sub_sub_menu_item"><span>text343</span></li>
+                            <li class="sub_sub_menu_item"><span>text344</span></li>
+                            <li class="sub_sub_menu_item"><span>text34</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text35</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text351</span></li>
+                            <li class="sub_sub_menu_item"><span>text352</span></li>
+                            <li class="sub_sub_menu_item"><span>text353</span></li>
+                            <li class="sub_sub_menu_item"><span>text354</span></li>
+                            <li class="sub_sub_menu_item"><span>text355</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu_item"><span>text4</span>
+                <ul class="sub_menu">
+                    <li class="sub_menu_item"><span>text41</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text411</span></li>
+                            <li class="sub_sub_menu_item"><span>text412</span></li>
+                            <li class="sub_sub_menu_item"><span>text413</span></li>
+                            <li class="sub_sub_menu_item"><span>text414</span></li>
+                            <li class="sub_sub_menu_item"><span>text415</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text42</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text421</span></li>
+                            <li class="sub_sub_menu_item"><span>text422</span></li>
+                            <li class="sub_sub_menu_item"><span>text423</span></li>
+                            <li class="sub_sub_menu_item"><span>text424</span></li>
+                            <li class="sub_sub_menu_item"><span>text425</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text43</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text431</span></li>
+                            <li class="sub_sub_menu_item"><span>text432</span></li>
+                            <li class="sub_sub_menu_item"><span>text433</span></li>
+                            <li class="sub_sub_menu_item"><span>text434</span></li>
+                            <li class="sub_sub_menu_item"><span>text435</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text44</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text441</span></li>
+                            <li class="sub_sub_menu_item"><span>text442</span></li>
+                            <li class="sub_sub_menu_item"><span>text443</span></li>
+                            <li class="sub_sub_menu_item"><span>text444</span></li>
+                            <li class="sub_sub_menu_item"><span>text445</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text45</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text451</span></li>
+                            <li class="sub_sub_menu_item"><span>text452</span>2</li>
+                            <li class="sub_sub_menu_item"><span>text453</span></li>
+                            <li class="sub_sub_menu_item"><span>text454</span></li>
+                            <li class="sub_sub_menu_item"><span>text455</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu_item"><span>text5</span>
+                <ul class="sub_menu">
+                    <li class="sub_menu_item"><span>text51</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text511</span></li>
+                            <li class="sub_sub_menu_item"><span>text512</span></li>
+                            <li class="sub_sub_menu_item"><span>text513</span></li>
+                            <li class="sub_sub_menu_item"><span>text514</span></li>
+                            <li class="sub_sub_menu_item"><span>text515</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text52</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text521</span></li>
+                            <li class="sub_sub_menu_item"><span>text522</span></li>
+                            <li class="sub_sub_menu_item"><span>text523</span></li>
+                            <li class="sub_sub_menu_item"><span>text524</span></li>
+                            <li class="sub_sub_menu_item"><span>text525</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text53</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text531</span></li>
+                            <li class="sub_sub_menu_item"><span>text532</span></li>
+                            <li class="sub_sub_menu_item"><span>text533</span></li>
+                            <li class="sub_sub_menu_item"><span>text534</span></li>
+                            <li class="sub_sub_menu_item"><span>text535</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text54</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text541</span></li>
+                            <li class="sub_sub_menu_item"><span>text542</span></li>
+                            <li class="sub_sub_menu_item"><span>text543</span></li>
+                            <li class="sub_sub_menu_item"><span>text544</span></li>
+                            <li class="sub_sub_menu_item"><span>text545</span></li>
+                        </ul>
+                    </li>
+                    <li class="sub_menu_item"><span>text55</span>
+                        <ul class="sub_sub_menu">
+                            <li class="sub_sub_menu_item"><span>text551</span></li>
+                            <li class="sub_sub_menu_item"><span>text552</span></li>
+                            <li class="sub_sub_menu_item"><span>text553</span></li>
+                            <li class="sub_sub_menu_item"><span>text554</span></li>
+                            <li class="sub_sub_menu_item"><span>text555</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>
